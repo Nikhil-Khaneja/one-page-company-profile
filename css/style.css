@@ -1,0 +1,617 @@
+/*==============================================================================================
+                    PROJECT NAME        :       WHITE GRAPHICS
+                            DEFAULT VALUES TO USE
+                    FONT                :       ROBOTO CONDENSED
+                    MEDIUM TURQUIOSE    :       #34C6D3(button, Icon, Link, Lines and Background)
+                    STEEL GRAY          :       #41464B(Headings)
+                    BLUE BAYOUX         :       #64707B(Paragraphs)
+                    WHITE               :       #FFF(Text with darker bg)
+                    BLACK               :       #000(for hover and some places)
+=============================================================================================*/
+
+/*==============================================================================================
+                                GENERAL SECTION CSS
+===========================================================================================*/           
+body,html{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto condensed',sans-serif;
+}
+
+/*================================================================================================
+                                FONT COLOR SETTTING
+================================================================================================*/
+.text-heading{
+    color: #41464B;
+    text-transform: uppercase;
+}
+.text-heading-white{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.text-content{
+    color: #64707B;
+}
+
+/*================================================================================================
+                                PARALLAX IMAGE
+================================================================================================*/
+
+.bg-parallax{    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;/*yeh tere pic ko parallax bana ke rakhega */
+    background-position: center;
+}
+
+/*================================================================================================
+                            SOCIAL ICON CSS
+================================================================================================*/
+.navbar{
+    padding: 10px 0;
+    transition: all 0.5s ease-in-out;
+    border: none;
+}
+
+.wg-top-nav{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.wg-nav-wrapper{
+    padding: 0 10px;
+}
+.navbar-brand{
+    color: #fff;
+    font-size: 26px;
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+#wg-menu{
+    float: right;
+}
+
+.navbar-nav>li>a{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar-nav>li>a:focus,
+.navbar-nav>li>a:hover{
+    background: none;
+    color: #34C6D3;
+}
+
+.navbar-toggle{
+    background-color: rgba(0,0,0,0.5);
+    border: solid 1px #fff;
+    border-radius: 0;
+}
+
+.navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+.navbar-collapse{
+    max-height: none!important;
+}
+
+.navbar ul.navbar-nav>li.active>a{
+    color:#34C6D3;
+}
+
+
+/*==============================================================================================
+                                GENERAL SECTION CSS
+===========================================================================================*/     
+.btn-general{
+    border: solid 2px #fff;
+    border-radius: 0;
+    padding: 12px 26px;
+    text-transform: uppercase;
+}
+
+.btn-white{
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus{
+    background: #fff;
+    color: #41464B;
+}
+
+.btn-blue{
+    color: #34C6D3;
+    border-color: #34C6D3;
+}
+
+.btn-blue:hover,
+.btn-blue:focus{
+    background: #34C6D3;
+    color: #fff;
+}
+
+
+/*================================================================================================
+                                HOME SECTION CSS
+================================================================================================*/
+
+.home-section{
+    height: 100%;
+}
+
+.home-cover{
+    background-image: url('../img/bg-cover.jpg');
+    height: 100%;
+}
+.home-content-box{
+    height: 100%;
+    width:100%;
+    display: table;
+}
+
+.home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+/*    text-align: center;*/
+}
+
+.home-section .text-heading{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/*CSS TO ANIMATE THINGS IN HOME SECTION*/
+.home-cover,
+.text-heading,
+.home-btn{
+    animation-duration: .3s;
+}
+.home-cover{
+    animation-delay: .05s;
+}
+.text-heading{
+    animation-delay: .1s;
+}
+.home-btn{
+    animation-delay: .3s;
+}
+/*================================================================================================
+                                CONTENT BOX CSS
+================================================================================================*/
+
+.content-box{
+    padding: 60px 0;
+}
+
+.content-box .text-heading{
+    font-size: 30px;
+    margin: 0 0 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content-title-underline{
+    width: 30px;
+    height: 3px;
+    background: #34C6D3;
+    margin: 0 auto 30px;
+}
+
+/*================================================================================================
+                                SERVICES: ; SECTION CSS
+================================================================================================*/
+.service-item{
+    padding: 20px 0;
+    margin: 0 0 20px;
+    cursor: pointer;
+}
+
+.service-item-icon .fa{
+    color: #34C6D3;
+    float: left;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px; 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service-item:hover .service-item-icon .fa{
+    color: #fff;
+    background: #34C6D3; 
+}
+
+.service-item-title .text-heading{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    text-align: left;
+}
+
+.service-item-desc p{
+    margin: 0;
+    padding-left: 100px;
+     text-align: left;
+}
+
+/*================================================================================================
+                            ABOUT SECTION CSS
+================================================================================================*/
+
+.about-content-box{
+    float: left;
+    height: 700px; /*Image will also have the same height  */
+}
+
+.about-content-box-outer{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.about-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;    
+}
+
+.about-btn{
+    text-align: center;
+}
+
+.about-bg-diagonal{
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url('../img/bg-about.jpg');
+    border-top: solid 700px transparent;
+    border-left: solid 200px white;
+}
+
+/*================================================================================================
+                            WORK SECTION
+===============================================================================================*/
+
+.row .no-gutters [class*= col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: transform .5s ease;
+}
+
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*================================================================================================
+                            TEAM SECTION CSS
+================================================================================================*/
+
+.team-member{
+    margin: 0 15px;
+}
+
+.team-member-info{
+    padding: 10px 0 30px 0;
+}
+
+h4.team-member-name{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px; 
+}
+
+h4.team-member-designation{
+    color: #34C6D3;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/*================================================================================================
+                            TESTIMONIAL SECTION CSS
+================================================================================================*/
+
+.bg-testimonial{
+    background-image: url(../img/bg-testimonials.jpg);
+    background-size: cover;
+}
+
+.testimonial .content-box-outer{
+    display: table;
+}
+.content-box{
+    width: 100%;
+}
+.testimonial .content-box-inner{
+    display: table-cell;
+    color: #fff;
+    vertical-align:middle;     
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.content-image{
+    width: 300px;
+    margin: 0 auto;
+}
+.content-image .img-sizing{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+.testimonial .content-box-inner blockquote{
+    border-left: none;
+    font-size: 40px;
+}
+
+.testimonial .content-box-inner blockquote span{
+    font-size: 20px;
+    font-style: italic;
+    line-height: 20px;
+/*    display:none;*/
+}
+
+/*================================================================================================
+                            SOCIAL ICON CSS
+================================================================================================*/
+
+.social-list{
+    padding-left: 0;
+}
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top: 10px;
+}
+
+.social-icon i{
+    font-size: 17px;
+}
+
+.icon-gray{
+    color: #41464B;
+}
+
+.icon-white{
+    color: #fff;
+}
+
+.icon-facebook:hover{
+    color: #2964B4;
+}
+
+.icon-twitter:hover{
+    color: #1DA1F2; 
+}
+
+.icon-google-plus:hover{
+    color: #D31718;    
+}
+
+.icon-youtube:hover{
+    color:#FF0000;
+}
+
+
+/*================================================================================================
+                            PRICING TABLE CSS
+================================================================================================*/
+
+.pricing-box{
+    text-align: center;
+    border: solid 3px #34C6D3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+h4.pricing-title{
+    background-color: #34C6D3;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+h3.pricing-value{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.pricing-value sup{
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: super;
+}
+
+ul.pricing-spec{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px;
+}
+
+ul.pricing-spec li p{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.pricing-box-lg{
+    padding: 90px 0;
+    margin: 0;
+    background-color: #34C6D3;
+}
+
+.pricing-box-lg h4.pricing-title{
+    color: #34C6D3;
+    background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-title{
+    color:#fff;
+}
+
+/*==============================================================================================
+                                STATS SECTION CSS
+===========================================================================================*/ 
+
+.stats-cover{
+    background-image: url(../img/bg-stats.jpg)
+}
+
+.stats-cover .content-box{
+    background-color: rgba(0,0,0,0.7);
+}
+
+.stats-item {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.stats-item i{
+    color: #34C6D3;
+}
+
+.stats-item h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.stats-item p{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.client{
+    padding: 100px 0;
+}
+
+/*==============================================================================================
+                                CONTACT SECTION CSS
+===========================================================================================*/ 
+
+footer{
+    background-color: #41464B;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+
+footer p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contact-right h3,
+.contact-left h3{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.contact-info{
+    background: url(../img/world-map.png) no-repeat;
+    background-size: contain;
+}
+
+address{
+    color: #fff;
+}
+
+address strong,
+.phone-fax-email strong{
+    font-size: 16px;
+    letter-spacing: 1px; 
+}
+
+.form-control{
+    background-color: transparent;
+    border-radius: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    border-color: #fff;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+}
+
+.footer-bottom{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+.footer-copyrights p{
+    color: #fff;
+}
+.footer-menu{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.footer-menu ul li{
+    display: inline-block;
+}
+.footer-menu a{
+    color: #fff;
+    padding-right: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.footer-menu a:hover{
+    color: #34C6D3;
+}
+
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 5px 15px;
+    display:none;
+   
+}

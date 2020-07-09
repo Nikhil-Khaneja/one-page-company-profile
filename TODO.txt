@@ -1,0 +1,5 @@
+SERVICES SECTION 
+
+    1. We have floated icons in services section but we have not applied clearfix to it as its parent is col-md-4 
+    
+    2.change all designation  ~done
